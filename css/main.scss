@@ -1,0 +1,73 @@
+@use "./sass" as *;
+
+header {
+    h1 {
+        padding: $md-pd;
+        // margin-bottom: $lg-mg;
+        text-align: center;
+    }
+}
+
+main {
+    // border: 2px solid red;
+    // width: max-content;
+
+    section {
+        margin-bottom: $lg-mg;
+        // border: 2px solid black;
+        width: max-content;
+        max-width: 90%;
+        margin-inline: auto;
+    }
+
+    .input {
+        p {
+            margin-bottom: $sm-mg;
+            text-align: center;
+            .comma {
+                font-size: 2rem;
+            }
+        }
+
+        textarea {
+            width: 70%;
+            display: block;
+            margin-inline: auto;
+            // border: 2px solid red;
+            color: #333;
+            padding: $md-pd;
+            font-size: 1.2rem;
+            background: none;
+            box-shadow: inset 4px 4px 25px #333;
+            border-radius: $radius;
+            resize: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.tags {
+    @include flex(start);
+    flex-wrap: wrap;
+    span {
+        border: 2px solid gray;
+        padding: $sm-pd;
+        border-radius: $radius;
+    }
+    .active {
+        background-color: red;
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+    }
+    .small {
+        font-size: 0.7rem;
+        margin-block: $md-mg;
+    }
+}

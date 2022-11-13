@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap");
+/* background-colors ****************/
+/* Font-colors ****************/
+/* Sizes-margin ****************/
+/* Sizes-padding ****************/
+/* other ****************/
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(52, 95, 151);
+  color: #cfd0ef;
+  min-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  font: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.4em 0.8em;
+}
+
+:root {
+  --fs-xl: 3rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  /* minimum value */
+  /* preferred value = 4% viewport width */
+  /* maximum value */
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+h3 {
+  /* minimum value */
+  /* preferred value = 4% viewport width */
+  /* maximum value */
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+header h1 {
+  padding: 0.8em 1.6em;
+  text-align: center;
+}
+
+main section {
+  margin-bottom: 2.8rem;
+  width: max-content;
+  max-width: 90%;
+  margin-inline: auto;
+}
+main .input p {
+  margin-bottom: 1.125rem;
+  text-align: center;
+}
+main .input p .comma {
+  font-size: 2rem;
+}
+main .input textarea {
+  width: 70%;
+  display: block;
+  margin-inline: auto;
+  color: #333;
+  padding: 0.8em 1.6em;
+  font-size: 1.2rem;
+  background: none;
+  box-shadow: inset 4px 4px 25px #333;
+  border-radius: 15px;
+  resize: none;
+}
+main .input textarea:focus {
+  outline: none;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1.125rem;
+  flex-wrap: wrap;
+}
+.tags span {
+  border: 2px solid gray;
+  padding: 0.4em 0.8em;
+  border-radius: 15px;
+}
+.tags .active {
+  background-color: red;
+}
+
+footer p {
+  text-align: center;
+}
+footer .small {
+  font-size: 0.7rem;
+  margin-block: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
