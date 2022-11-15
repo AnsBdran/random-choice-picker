@@ -34,9 +34,9 @@ main {
             display: block;
             margin-inline: auto;
             // border: 2px solid red;
-            color: #333;
-            padding: $md-pd;
-            font-size: 1.2rem;
+            color: #eee;
+            padding: $lg-pd;
+            font-size: 1.5rem;
             background: none;
             box-shadow: inset 4px 4px 25px #333;
             border-radius: $radius;
@@ -58,7 +58,15 @@ main {
         border-radius: $radius;
     }
     .active {
-        background-color: red;
+        background-color: darken($color: $bg, $amount: 20%);
+    }
+    .temp {
+        // background-color: darken($color: $bg, $amount: 10%);
+        // background-color: lighten($color: $bg, $amount: 20%);
+        // animation: toggle-color infinite ease 0s infinite forwards both;
+        animation-name: toggle-color;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -69,5 +77,21 @@ footer {
     .small {
         font-size: 0.7rem;
         margin-block: $md-mg;
+    }
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+@keyframes toggle-color {
+    0% {
+        background-color: darken($color: $bg, $amount: 8%);
+    }
+    // 50% {
+    //     background-color: darken($color: $bg, $amount: 15%);
+    // }
+    100% {
+        background-color: darken($color: $bg, $amount: 20%);
     }
 }

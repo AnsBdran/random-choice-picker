@@ -95,9 +95,9 @@ main .input textarea {
   width: 70%;
   display: block;
   margin-inline: auto;
-  color: #333;
-  padding: 0.8em 1.6em;
-  font-size: 1.2rem;
+  color: #eee;
+  padding: 1.5em 2em;
+  font-size: 1.5rem;
   background: none;
   box-shadow: inset 4px 4px 25px #333;
   border-radius: 15px;
@@ -121,7 +121,12 @@ main .input textarea:focus {
   border-radius: 15px;
 }
 .tags .active {
-  background-color: red;
+  background-color: #1a2f4b;
+}
+.tags .temp {
+  animation-name: toggle-color;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 
 footer p {
@@ -130,6 +135,19 @@ footer p {
 footer .small {
   font-size: 0.7rem;
   margin-block: 2rem;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+@keyframes toggle-color {
+  0% {
+    background-color: #2a4c79;
+  }
+  100% {
+    background-color: #1a2f4b;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
